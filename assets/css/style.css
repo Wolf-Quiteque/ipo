@@ -18,6 +18,19 @@ img.canvasimg {
   }
 }
 
+@media (min-width: 992px) {
+  .card {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -141,22 +154,6 @@ div.mixed-pattern {
 /*Cardsss */
 .card {
   box-shadow: 2px 2px 5px rgba(0, 174, 255, 0.576);
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.text-shadow {
-  text-shadow: 2px 2px 3px rgba(255, 183, 0, 0.576);
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  color: white;
-  background-color: rgba(64, 128, 224, 0.741);
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
 }
 
 .card .card-footer {
