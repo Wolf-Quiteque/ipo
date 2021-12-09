@@ -26,7 +26,10 @@
     <title>Emainvest IPO</title>
   </head>
   <body style="background-color: #fbfefd">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #e3f2fd;">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      style="box-shadow: 2px 2px 5px rgba(0, 174, 255, 0.576)"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"
           ><img src="assets/images/logo.png" height="60px" alt=""
@@ -47,7 +50,9 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              EmaInvest - IPO
+            </h5>
             <button
               type="button"
               class="btn-close text-reset"
@@ -55,11 +60,12 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+          <div class="offcanvas-body" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"
-                  >sobre nos</a
+                  >Explorar</a
                 >
               </li>
               <li class="nav-item">
@@ -68,20 +74,24 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <button class="btn btn-outline-success btn-sm" type="submit">
-                    comece a investir
-                  </button></a
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Sobre nos</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <button class="btn btn-outline-primary btn-sm" type="submit">
-                    obter financiamento
-                  </button></a
+                <a class="nav-link text-info" href="#">comece a investir</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-primary" href="#"
+                  >obter financiamento</a
                 >
               </li>
             </ul>
+
+            <button class="btn btn-outline-primary" type="submit">Login</button>
+            &nbsp;
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
           </div>
         </div>
       </div>
@@ -92,15 +102,14 @@
       <section class="container-fluid
       ">
         <div class="row">
-          <div class="col-2">
+          <div class="col-1">
             <img
-              style="height: 100px; width: 100px; border-radius: 50%"
+            class="logopic"
               src="assets/images/empresalogo/emarpelogo.jpg"
-              class="img-fluid"
               alt=""
             />
           </div>
-          <div class="col-10 ">
+          <div class="col-11">
             <h1 style="margin-top: 20px">Emapre Accounting, Lda</h1>
           </div>
         </div>
@@ -144,7 +153,7 @@
                 >acumulado</small
               >
             </h2>
-            <div class="progressing mt-3 mb-3" style="height: 3px; width: 100%; background-color: #2FC07B;">
+            <div class="progressing mt-3 mb-3" style="height: 3px; width: 100%; background-color: #2f69c0;">
             </div>
             <div class="row mt-2 container">
               <div class="col-6">
@@ -185,7 +194,7 @@
                 <span>Tipo de oferta</span>
               </div>
               <div class="col-12 mt-4">
-                <button type="button" class="btn btn-success btn-lg">Investir Agora</button>
+                <button type="button" class="btn btn-primary btn-lg">Investir Agora</button>
                 <div style="margin-top:30px; height: 20px; background-image: url(assets/images/patterns/padraAzul2.jpg);" >  </div>
               </div>
             </div>
@@ -194,9 +203,12 @@
         </div>
         <nav class="navbar sticky-top navbar-expand-lg " style="padding-top: 100px; background-color:white;">
           <div class="container-fluid">
-            <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="bi bi-caret-down-square-fill"> Secções</i>
+            <button  class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-caret-down-square-fill"> </i>
             </button>
+            <button class="btn btn-outline-danger navbar-toggler" type="submit"> <i class="bi bi-heart"></i> </button>
+            <button class="btn btn-outline-primary navbar-toggler" type="submit"> Investir Agora</button>
+            
             <div class="collapse navbar-collapse" id="navbarScroll" >
               <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                 <li class="nav-item">
@@ -216,8 +228,8 @@
              
               </ul>
               <form class="d-flex">
-                 <button class="btn btn-outline-danger" type="submit"> <i class="bi bi-heart"></i> Seguir</button>&nbsp;
-                <button class="btn btn-success" type="submit">Investir Agora</button>
+                 <button class="btn btn-outline-danger navbuttons" type="submit"> <i class="bi bi-heart"></i> Seguir</button>&nbsp;
+                <button class="btn btn-primary navbuttons" type="submit">Investir Agora</button>
               </form>
             </div>
           </div>
@@ -246,7 +258,7 @@ Sed hendrerit, lacus non interdum facilisis, neque augue ultricies ipsum, non so
     <br>
     <div class="row">
       <div class="col-4"><h5 class="sub" id="problema"  >O problema </h5></div> 
-      <div class="col-8"><div class="blue-pattern sub"></div></div>
+      <div class="col-8"><div class="blue sub"></div></div>
     </div>
 
     <h1>Materias insuficientes</h1>
@@ -271,7 +283,7 @@ Sed hendrerit, lacus non interdum facilisis, neque augue ultricies ipsum, non so
 
     <div class="row">
       <div class="col-4"><h5 class="sub"   >A Solução </h5></div> 
-      <div class="col-8"><div class="blue-pattern sub"></div></div>
+      <div class="col-8"><div class="blue sub"></div></div>
     </div>
     <h1>Novos Recursos</h1>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo at massa tempor tristique sit amet ut est. 
@@ -295,7 +307,7 @@ Sed hendrerit, lacus non interdum facilisis, neque augue ultricies ipsum, non so
 
     <div class="row">
       <div class="col-4"><h5 class="sub"   >Nossa Tração </h5></div> 
-      <div class="col-8"><div class="blue-pattern sub"></div></div>
+      <div class="col-8"><div class="blue sub"></div></div>
     </div>
     <h1>Novos produtos, patentes e marcas registradas, pedidos pendentes e uma subsidiária</h1>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo at massa tempor tristique sit amet ut est. 
@@ -319,7 +331,7 @@ Sed hendrerit, lacus non interdum facilisis, neque augue ultricies ipsum, non so
 
     <div class="row">
       <div class="col-4"><h5 class="sub"  >O MODELO DE NEGÓCIO </h5></div> 
-      <div class="col-8"><div class="blue-pattern sub"></div></div>
+      <div class="col-8"><div class="blue sub"></div></div>
     </div>
     <h1>Produtos de última geração diretos ao consumidor</h1>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo at massa tempor tristique sit amet ut est. 
@@ -344,7 +356,7 @@ Sed hendrerit, lacus non interdum facilisis, neque augue ultricies ipsum, non so
 
     <div class="row">
       <div class="col-4"><h5 class="sub"  >Nossa Liderança </h5></div> 
-      <div class="col-8"><div class="blue-pattern sub"></div></div>
+      <div class="col-8"><div class="blue sub"></div></div>
     </div>
     <h1>Produtos de última geração diretos ao consumidor</h1>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a justo at massa tempor tristique sit amet ut est. 
@@ -367,6 +379,10 @@ Sed hendrerit, lacus non interdum facilisis, neque augue ultricies ipsum, non so
     <br>  
  </div>
         </div>
+      </section>
+
+      <section>
+        <h5 class="sub text-center">Atualizações</h5>
       </section>
     </main>
 

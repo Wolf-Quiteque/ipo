@@ -2,6 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+@media (max-width: 991px) {
+  .navbuttons {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -54,7 +61,7 @@ section.hero-image {
 
   height: 500px; /* You must set a specified height */
   max-width: 100%;
-  background-position: center; /* Center the image */
+  background-position: 80%; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   /* opacity: 0.1;*/
@@ -64,9 +71,9 @@ section.emaIpo-wallpaper {
   background-color: #000000; /* Used if the image is unavailable */
   background-image: url("../images/wallpaper/emaipo.png"); /* The image used */
 
-  height: 600px; /* You must set a specified height */
+  height: 500px; /* You must set a specified height */
   max-width: 100%;
-  background-position: center; /* Center the image */
+  background-position: 88%; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   /* opacity: 0.1;*/
@@ -78,12 +85,22 @@ section.funciona-wallpaper {
 
   height: 600px; /* You must set a specified height */
   max-width: 100%;
-  background-position: center; /* Center the image */
+  background-position: 100%; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   /* opacity: 0.1;*/
 }
 /*******************************/
+
+img.logopic {
+  position: absolute;
+  margin-top: 90px;
+  padding: 5px;
+  height: 10%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 div.grey-pattern {
   background-color: gainsboro;
@@ -98,10 +115,10 @@ div.blue-pattern {
   height: 30px;
 }
 
-div.blue-pattern.sub {
-  background-image: url("../images/patterns/padraAzul2.jpg");
+div.blue.sub {
+  background-color: #2f69c0;
   width: 100%;
-  height: 5px;
+  height: 3px;
   margin-top: 12px;
 }
 
@@ -114,7 +131,7 @@ div.mixed-pattern {
 
 /*Cardsss */
 .card {
-  box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.576);
+  box-shadow: 2px 2px 5px rgba(0, 174, 255, 0.576);
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -133,34 +150,19 @@ div.mixed-pattern {
   transform: scale(1.1);
 }
 
-.card .card-footer.first-footer {
+.card .card-footer {
   color: white;
-  background: #52c234; /* fallback for old browsers */
+  background: #000046; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #061700,
-    #52c234
+    to top,
+    #1cb5e0,
+    #000046
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #061700,
-    #52c234
+    to top,
+    #1cb5e0,
+    #000046
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.card .card-footer.second-footer {
-  background: #fe8c00; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f83600,
-    #fe8c00
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f83600,
-    #fe8c00
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
 }
 
 .card .card-footer .line {
