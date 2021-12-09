@@ -41,6 +41,21 @@ h6 {
   font-weight: 700px;
 }
 
+div.main-info {
+  padding: 10px;
+  position: absolute;
+  margin-top: 160px;
+  padding-bottom: 50px;
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(11, 169, 242);
+}
+
+div.main-info .main-text {
+  margin-top: 40px;
+}
+
 div.info h1,
 div.info h2,
 div.info h3,
