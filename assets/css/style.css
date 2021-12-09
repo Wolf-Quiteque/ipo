@@ -102,6 +102,12 @@ img.logopic {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+img.canvasimg {
+  margin-top: -10px;
+  margin-left: -200px;
+  position: absolute;
+}
+
 div.grey-pattern {
   background-color: gainsboro;
   width: 100%;
