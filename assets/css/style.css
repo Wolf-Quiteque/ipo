@@ -73,7 +73,7 @@ img.canvasimg {
     transition: transform 0.3s;
   }
 
-  .card:hover {
+  .card.card-empresas:hover {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1);
@@ -202,7 +202,11 @@ div.mixed-pattern {
 
 /*Cardsss */
 .card {
-  box-shadow: 2px 2px 5px rgba(0, 174, 255, 0.576);
+  box-shadow: 0 0 6px rgba(0, 174, 255, 0.576);
+}
+
+.blue-shadow {
+  box-shadow: 0 0 6px rgba(0, 174, 255, 0.576);
 }
 
 .card .card-footer {
