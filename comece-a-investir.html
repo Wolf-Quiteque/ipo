@@ -6,7 +6,7 @@
     <meta name="description" content="" />
 
     <meta name="generator" content="Hugo 0.88.1" />
-    <title>Login</title>
+    <title>Obter Investimento</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -88,9 +88,7 @@
               </li>
 
               <li class="nav-item">
-                <a
-                  class="nav-link text-primary"
-                  href="cadastramento-investimento.html"
+                <a class="nav-link text-primary" href="obter-investimento.html"
                   >Obter financiamento</a
                 >
               </li>
@@ -112,48 +110,74 @@
     <main class="login-card">
       <div class="container col-xl-10 col-xxl-8 px-4 py-5 mt-5">
         <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start mb-5">
+          <div class="col-md-12">
             <h1 class="display-4 fw-bold lh-1 mb-3">
-              Juntos, transformamos sonhos em realidade
+              Cadastre-se, encontre uma empresa. Torne-se seu próximo
+              investidor.
             </h1>
-            <p class="col-lg-10 fs-4">
-              Abrimos uma nova porta, onde investidores e empreendedores podem
-              se encontrar, crescer e ajudar uns aos outros em um mundo digital.
+            <p class="col-md-12 fs-4">
+              Ajude a criar um novo futuro, ajude a iluminar ideias brilhantes.
             </p>
           </div>
-          <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-light login-card">
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="name@example.com"
-                />
-                <label for="floatingInput">Email </label>
+          <div class="col-md-12 mx-auto">
+            <form class="row p-4 p-md-5 border rounded-3 bg-light login-card">
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="nome da empresa"
+                  />
+                  <label for="floatingInput">Nome Completo</label>
+                </div>
               </div>
-              <div class="form-floating mb-3">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="floatingPassword"
-                  placeholder="Senha"
-                />
-                <label for="floatingPassword">Senha</label>
+
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="exemplo@gmail.com"
+                  />
+                  <label for="floatingInput">Email</label>
+                </div>
               </div>
-              <div class="checkbox mb-3">
-                <label>
-                  <input type="checkbox" value="remember-me" /> Lembrar
-                  credenciais
-                </label>
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Nº Tel da empresa"
+                  />
+                  <label for="floatingPassword">Telfone</label>
+                </div>
               </div>
-              <button class="w-100 btn btn-lg btn-primary" type="submit">
-                login
+              <div class="col-md-6">
+                <div class="form-floating mb-3">
+                  <textarea
+                    id="floatingEndereco"
+                    class="form-control"
+                    name=""
+                    id=""
+                    placeholder="Endereço"
+                  ></textarea>
+                  <label for="floatingEndereco">Endereço</label>
+                </div>
+              </div>
+
+              <button
+                class="btn btn-primary"
+                type="submit"
+                style="width: 25%; margin-top: 30px"
+              >
+                Cadastar
               </button>
               <hr class="my-4" />
               <small class="text-muted"
-                >Ainda não tem conta?
-                <a href="cadastrar.html">entra aqui</a></small
+                >Ja tem conta? <a href="login.html">entra aqui</a></small
               >
             </form>
             <img
